@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:money_manager/db/category/category_db.dart';
-import 'package:money_manager/models/category_model.dart';
+import 'package:aj_money_manager/db/category/category_db.dart';
+import 'package:aj_money_manager/models/category_model.dart';
 
 class ExpenseMonthlyList extends StatelessWidget {
   String date;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager/screens/add_category.dart';
-import 'package:money_manager/screens/expense_monthly_list.dart';
-import 'package:money_manager/screens/home/screen_home.dart';
-import 'package:money_manager/screens/income_monthly_list.dart';
+import 'package:aj_money_manager/screens/add_category.dart';
+import 'package:aj_money_manager/screens/expense_monthly_list.dart';
+import 'package:aj_money_manager/screens/home/screen_home.dart';
+import 'package:aj_money_manager/screens/income_monthly_list.dart';
 
 class MonthlyWiseTransacton extends StatefulWidget {
   String date;

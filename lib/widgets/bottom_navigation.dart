@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager/screens/home/screen_home.dart';
+import 'package:aj_money_manager/screens/home/screen_home.dart';
 
 class MoneyManagerBottomNavigation extends StatelessWidget {
   const MoneyManagerBottomNavigation({Key? key}) : super(key: key);

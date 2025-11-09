@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:money_manager/models/category_model.dart';
-import 'package:money_manager/models/transaction_model.dart';
+import 'package:aj_money_manager/models/category_model.dart';
+import 'package:aj_money_manager/models/transaction_model.dart';
 
-import 'package:money_manager/screens/home/screen_home.dart';
+import 'package:aj_money_manager/screens/home/screen_home.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

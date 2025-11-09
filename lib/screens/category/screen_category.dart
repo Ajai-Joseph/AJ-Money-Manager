@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager/screens/add_category.dart';
-import 'package:money_manager/screens/category/expense_category_list.dart';
-import 'package:money_manager/screens/category/income_category_list.dart';
+import 'package:aj_money_manager/screens/add_category.dart';
+import 'package:aj_money_manager/screens/category/expense_category_list.dart';
+import 'package:aj_money_manager/screens/category/income_category_list.dart';
 
 class ScreenCategory extends StatefulWidget {
   const ScreenCategory({Key? key}) : super(key: key);

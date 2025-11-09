@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:intl/intl.dart';
-import 'package:money_manager/models/category_model.dart';
-import 'package:money_manager/models/transaction_model.dart';
+import 'package:aj_money_manager/models/category_model.dart';
+import 'package:aj_money_manager/models/transaction_model.dart';
 
 const CATEGORY_DB_NAME = "category-database";
 const TRANSACTION_DB_NAME = "transaction-database";

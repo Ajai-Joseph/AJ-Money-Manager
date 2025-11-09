@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager/db/category/category_db.dart';
+import 'package:aj_money_manager/db/category/category_db.dart';
 
-import 'package:money_manager/models/transaction_model.dart';
-import 'package:money_manager/screens/monthly_wise_transaction.dart';
+import 'package:aj_money_manager/models/transaction_model.dart';
+import 'package:aj_money_manager/screens/monthly_wise_transaction.dart';
 
 class ScreenTransaction extends StatelessWidget {
   const ScreenTransaction({Key? key}) : super(key: key);

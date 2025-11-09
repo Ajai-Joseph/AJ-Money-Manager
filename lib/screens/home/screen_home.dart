@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager/screens/category/screen_category.dart';
+import 'package:aj_money_manager/screens/category/screen_category.dart';
 
-import 'package:money_manager/screens/transactions/screen_transaction.dart';
-import 'package:money_manager/widgets/bottom_navigation.dart';
+import 'package:aj_money_manager/screens/transactions/screen_transaction.dart';
+import 'package:aj_money_manager/widgets/bottom_navigation.dart';
 
 class ScreenHome extends StatelessWidget {
   ScreenHome({Key? key}) : super(key: key);
