@@ -3,6 +3,7 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:intl/intl.dart';
 import 'package:aj_money_manager/models/category_model.dart';
 import 'package:aj_money_manager/models/transaction_model.dart';
+import 'package:aj_money_manager/services/chart_service.dart';
 
 const CATEGORY_DB_NAME = "category-database";
 const TRANSACTION_DB_NAME = "transaction-database";
@@ -35,6 +36,10 @@ ValueNotifier<List<TransactionModel>> monthlyTransactionListNotifier =
 Future<void> addCategory(CategoryModel value) async {
   final categoryDB = await Hive.openBox<CategoryModel>(CATEGORY_DB_NAME);
   categoryDB.put(value.id, value);
+  
+  // Clear chart cache when data changes
+  ChartService.clearCache();
+  
   if (value.categoryType == "income") {
     incomeCategoryListNotifier.value.add(value);
 
@@ -84,6 +89,10 @@ Future<void> deleteTransaction(String id) async {
   final transactonDB =
       await Hive.openBox<TransactionModel>(TRANSACTION_DB_NAME);
   transactonDB.deleteFromDisk();
+  
+  // Clear chart cache when data changes
+  ChartService.clearCache();
+  
   getCategory("income");
   getMonthlyTransaction();
 }

@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:aj_money_manager/db/category/category_db.dart';
 import 'package:aj_money_manager/models/category_model.dart';
-import 'package:aj_money_manager/screens/category/screen_category.dart';
-import 'package:aj_money_manager/screens/home/screen_home.dart';
 
 class AddCategory extends StatefulWidget {
-  const AddCategory({Key? key}) : super(key: key);
+  const AddCategory({super.key});
 
   @override
   State<AddCategory> createState() => _AddCategoryState();
